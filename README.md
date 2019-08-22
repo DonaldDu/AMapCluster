@@ -1,3 +1,4 @@
+# AMapCluster [![](https://jitpack.io/v/DonaldDu/AMapCluster.svg)](https://jitpack.io/#DonaldDu/AMapCluster)
 本工程为基于高德地图Android SDK进行封装，实现了Marker聚合效果的例子
 ## 前述 ##
 - [高德官网申请Key](http://lbs.amap.com/dev/#/).
