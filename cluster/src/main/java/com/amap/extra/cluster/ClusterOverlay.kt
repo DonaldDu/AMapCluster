@@ -88,6 +88,7 @@ class ClusterOverlay(private val amap: AMap, private val clusterSize: Int) : AMa
     override fun onCameraChangeFinish(arg0: CameraPosition) {
         val update = updateClusterDistance(amap, clusterSize)
         if (update) assignClusters()
+        else update()
     }
 
     //点击事件
@@ -170,10 +171,13 @@ class ClusterOverlay(private val amap: AMap, private val clusterSize: Int) : AMa
                 clusters.add(cluster)
             }
         }
+        if (!isCanceled) update()
+    }
+
+    private fun update() {
         val message = Message.obtain()
         message.what = ADD_CLUSTER_LIST
         message.obj = ArrayList(clusters)  //复制一份数据，规避同步
-        if (isCanceled) return
         markerhandler.sendMessage(message)
     }
 
