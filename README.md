@@ -1,5 +1,5 @@
 # AMapCluster [![](https://jitpack.io/v/DonaldDu/AMapCluster.svg)](https://jitpack.io/#DonaldDu/AMapCluster)
-本工程为基于[android-cluster-marker](https://github.com/amap-demo/android-cluster-marker) 修改而来，并更新打包方式以便使用。
+本工程基于[android-cluster-marker](https://github.com/amap-demo/android-cluster-marker) 修改而来，并更新打包方式以便使用。
 
 当缩放比例不变滑动地图时，（重新显示的）聚合点位置不变。
 ## CountClusterRender 计数聚合渲染器
@@ -7,7 +7,7 @@
 ## LessClusterRender 少点聚合渲染器
 将一定范围内的所有点聚合为一个点，然后显示为单个点的样式。也就是地图上的图标样式不会改变，只是点的数量在变。
 
-本工程为基于高德地图Android SDK进行封装，实现了Marker聚合效果的例子
+本工程基于高德地图Android SDK进行封装，实现了Marker聚合效果的例子
 ## 前述 ##
 - [高德官网申请Key](http://lbs.amap.com/dev/#/).
 - 阅读[参考手册](http://a.amap.com/lbs/static/unzip/Android_Map_Doc/index.html).
